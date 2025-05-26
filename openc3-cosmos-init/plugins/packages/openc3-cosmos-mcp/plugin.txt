@@ -1,0 +1,4 @@
+MICROSERVICE MCP <%= mcp_service_name %>
+  CMD ruby mcp_service.rb
+  ROUTE_PREFIX /mcp
+  PORT 7660
