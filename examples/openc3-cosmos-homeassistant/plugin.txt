@@ -1,0 +1,9 @@
+VARIABLE ha_host localhost
+VARIABLE ha_port 8123
+VARIABLE ha_token_secret HA_TOKEN
+
+MICROSERVICE HA_BRIDGE HOME_ASSISTANT_BRIDGE
+  WORK_DIR .
+  OPTION HOST <%= ha_host %>
+  OPTION PORT <%= ha_port %>
+  SECRET ENV <%= ha_token_secret %> HA_TOKEN TOKEN
