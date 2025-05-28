@@ -22,11 +22,10 @@ OpenC3 COSMOS already exposes JSON-RPC and WebSocket streaming APIs. To support 
 
 These libraries should be included in the plugin's Gem or Python requirements file so they are installed when the plugin is built.
 
-## TODO
+## Status
 
-1. Prototype a plugin with a basic MCP microservice that authenticates via COSMOS.
-2. Map MCP operations to JSON API calls for commands and telemetry retrieval.
-3. Add streaming support by forwarding telemetry updates from the WebSocket API to MCP clients.
-4. Provide configuration options for ROUTE_PREFIX and service port.
-5. Document how to install and run the plugin.
+The initial MCP adapter has been implemented as a plugin microservice. It uses
+`AuthModel` for token validation and exposes HTTP endpoints for sending commands
+and retrieving telemetry. Future work includes streaming telemetry support and
+additional MCP message types.
 

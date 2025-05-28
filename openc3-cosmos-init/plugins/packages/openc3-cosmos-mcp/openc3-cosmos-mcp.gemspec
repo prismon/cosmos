@@ -4,5 +4,5 @@ Gem::Specification.new do |s|
   s.summary = 'OpenC3 COSMOS MCP Microservice'
   s.authors = ['OpenC3']
   s.version = '0.0.0'
-  s.files = %w(plugin.txt README.md Rakefile)
+  s.files = Dir.glob('microservices/**/*') + %w(plugin.txt README.md Rakefile)
 end
